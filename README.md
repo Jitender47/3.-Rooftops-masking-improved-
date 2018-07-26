@@ -15,7 +15,7 @@ __Concepts used:__
   * Masking
   * Array Stacking
   
-__output (Left image is output | Right image is input):__
+__output (Left image is input | Right image is output):__
 
 ![output1](rooftops_mask/0.jpg "Image")
 ![output2](rooftops_mask/5.jpg "Image")
