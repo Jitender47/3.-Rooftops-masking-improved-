@@ -1,4 +1,4 @@
-## Rooftops masking in Google Maps Images
+## Rooftops detection in Google Maps Images
 
 __Dataset:__ Satellite Images of different areas in delhi
 
