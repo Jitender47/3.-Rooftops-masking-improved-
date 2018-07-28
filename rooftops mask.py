@@ -78,7 +78,7 @@ for dirpath, dirnames, filenames in os.walk('Satellite Images of different areas
 
 if __name__ == "__main__":
     # ITERATE OVER ALL IMAGES
-    for i, imgpath in enumerate(imagepaths[20:22]):
+    for i, imgpath in enumerate(imagepaths):
 
         # GET IMAGE AND RESIZE
         bgrimg = cv2.imread(imgpath)
@@ -91,10 +91,10 @@ if __name__ == "__main__":
         # DISPLAY RESULTS
         sbgrimg = sharpen(bgrimg)
         stacked3d = np.hstack((sbgrimg, refined3d))
-        cv2.imshow("3D", stacked3d)
+        # cv2.imshow("3D", stacked3d)
 
         # WRITE IMAGES TO DISK
-        # cv2.imwrite('rooftops_mask/{}.jpg'.format(i), stacked3d)
+        cv2.imwrite('rooftops_mask/{}.jpg'.format(i), stacked3d)
 
         k = cv2.waitKey(0)
         if k == 27:         # wait for ESC key to exit
